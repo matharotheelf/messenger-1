@@ -8,7 +8,7 @@ class History
     @log << message
   end 
 
-  def log
+  def show_log
     @log
   end 
 end

@@ -16,7 +16,7 @@ describe History do
       history.store(message)
       history.store(message2)
       history.store(message3)
-      expect(history.log).to eq([message, message2, message3])
+      expect(history.show_log).to eq([message, message2, message3])
     end  
   end 
 
@@ -24,7 +24,7 @@ describe History do
 
     it 'returns stored message' do
         history.store(message)
-        expect(history.log).to eq([message])
+        expect(history.show_log).to eq([message])
     end
   end 
 
