@@ -9,6 +9,6 @@ class History
   end 
 
   def show_log
-    @log
+    p @log
   end 
 end

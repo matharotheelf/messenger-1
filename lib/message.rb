@@ -1,9 +1,10 @@
 class Message
 
-attr_reader :message_contents
+attr_reader :content, :time
 
-def initialize(message)
-  @message_contents = message
+def initialize(content)
+@content = content
+@time = Time.now
 end
 
 end

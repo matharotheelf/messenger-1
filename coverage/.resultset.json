@@ -37,8 +37,8 @@
         1,
         1,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
@@ -102,25 +102,9 @@
         1,
         1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/joaoabbott-gribben/Projects/messenger/lib/message.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
         null
       ]
     },
-    "timestamp": 1545127919
+    "timestamp": 1545146606
   }
 }

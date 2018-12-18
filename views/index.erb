@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
+ <center>
  <head>
   <title>Messenger App</title>
  </head>
 <body>
   <h1> Welcome to the Messenger App </h1>
   <form action="/board" method='post'>
-    <label for='message'>
-      <input type='text' name='message'>
-      <input type='submit' value='Submit'>
-    </label>
+     <br> 
+    <input type='text' name='message'>
+     <br> 
+     <input type='submit' value='Submit'>
+     <br> 
   </form>
-
+       <br> 
+<% @messages.reverse.each do | message | %>
+<div> <%= message.content %> (<%= message.time.strftime('%a, %d %b %Y, %H:%M:%S') %>) </div>
+<br>
+<%end%>
  </body>
+</center>
 <html>
+
+
+
+

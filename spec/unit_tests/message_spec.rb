@@ -6,7 +6,6 @@ describe Message do
   let (:message) { Message.new(message_text) }
   
     it 'stores text' do
-      expect(message.message_contents).to eq(message_text)
+      expect(message.content).to eq(message_text)
     end
-
 end 
