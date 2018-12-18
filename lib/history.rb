@@ -1,10 +1,14 @@
 class History
 
-	def store(message)
-		@message = message
-	end 
+  def initialize
+    @log = []
+  end
 
-	def log
-		@message
-	end 
-end 
+  def store(message)
+    @log << message
+  end 
+
+  def log
+    @log
+  end 
+end
