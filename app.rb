@@ -14,7 +14,11 @@ class Messenger < Sinatra::Base
   post '/board' do
       message = Message.new(params[:message])
       session[:messages] << message
-      redirect '/'     
+      redirect '/'
+  end
+
+  get '/messages/:id' do
+    
   end
 end
 

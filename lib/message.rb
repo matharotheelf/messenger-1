@@ -1,10 +1,11 @@
 class Message
 
-attr_reader :content, :time
+attr_reader :content, :time, :id
 
-def initialize(content)
+def initialize(content, id = nil)
 @content = content
 @time = Time.now
+@id = id
 end
 
 def limit

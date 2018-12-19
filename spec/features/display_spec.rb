@@ -14,5 +14,6 @@ feature 'User can press on button to see full message' do
     click_button 'Submit'
     #fill_in 'message', with: 'I am jack sparrow You are Davey Jones'
     click_link 'jack sparrow davey j'
+    expect(page).to have_content 'jack sparrow davey jones orlando bloom pirates'
   end
 end
