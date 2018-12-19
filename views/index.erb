@@ -15,7 +15,7 @@
   </form>
        <br>
 <% @messages.reverse.each do | message | %>
-<div> <%= message.limit %> (<%= message.time.strftime('%a, %d %b %Y, %H:%M:%S') %>) </div>
+<div> <a href="https://www.w3schools.com"><%= message.limit %></a> (<%= message.time.strftime('%a, %d %b %Y, %H:%M:%S') %>) </div>
 <br>
 <%end%>
  </body>
