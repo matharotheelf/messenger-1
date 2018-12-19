@@ -5,6 +5,10 @@ class Messenger < Sinatra::Base
 
   enable :sessions
 
+  before do
+   session[:id] ||= 1
+  end
+
   get '/' do
     session[:messages] ||= []
     @messages = session[:messages]
@@ -12,13 +16,18 @@ class Messenger < Sinatra::Base
   end
 
   post '/board' do
-      message = Message.new(params[:message])
+      message = Message.new(params[:message], session[:id])
+      p message.id
       session[:messages] << message
+      session[:id] += 1
       redirect '/'
   end
 
   get '/messages/:id' do
-    
+    messages = session[:messages]
+    id = session[:id]
+    @message = messages[id - 1]
+    erb(:one_id)
   end
 end
 

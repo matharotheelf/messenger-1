@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/spec/features/display_spec.rb": [
+      "/Users/admin/Projects/messenger-1/spec/features/display_spec.rb": [
         1,
         1,
         1,
@@ -22,7 +22,7 @@
         null,
         null
       ],
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/spec/features/infrastructure_spec.rb": [
+      "/Users/admin/Projects/messenger-1/spec/features/infrastructure_spec.rb": [
         1,
         1,
         1,
@@ -30,30 +30,7 @@
         null,
         null
       ],
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/spec/features/input_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/spec/features/messenger_spec.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+      "/Users/admin/Projects/messenger-1/spec/features/input_spec.rb": [
         1,
         1,
         1,
@@ -63,7 +40,30 @@
         null,
         null
       ],
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/spec/history_spec.rb": [
+      "/Users/admin/Projects/messenger-1/spec/features/messenger_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/admin/Projects/messenger-1/spec/history_spec.rb": [
         1,
         null,
         1,
@@ -96,7 +96,7 @@
         null,
         null
       ],
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/lib/history.rb": [
+      "/Users/admin/Projects/messenger-1/lib/history.rb": [
         1,
         null,
         1,
@@ -112,7 +112,7 @@
         null,
         null
       ],
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/spec/id_spec.rb": [
+      "/Users/admin/Projects/messenger-1/spec/id_spec.rb": [
         1,
         null,
         1,
@@ -122,7 +122,7 @@
         null,
         null
       ],
-      "/Users/alexalikhani/Projects/messenger3/messenger-1/spec/unit_tests/message_spec.rb": [
+      "/Users/admin/Projects/messenger-1/spec/unit_tests/message_spec.rb": [
         1,
         null,
         1,
@@ -136,6 +136,6 @@
         null
       ]
     },
-    "timestamp": 1545235639
+    "timestamp": 1545236827
   }
 }
