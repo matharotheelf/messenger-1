@@ -7,21 +7,17 @@
 <body>
   <h1> Welcome to the Messenger App </h1>
   <form action="/board" method='post'>
-     <br> 
+     <br>
     <input type='text' name='message'>
-     <br> 
+     <br>
      <input type='submit' value='Submit'>
-     <br> 
+     <br>
   </form>
-       <br> 
+       <br>
 <% @messages.reverse.each do | message | %>
-<div> <%= message.content %> (<%= message.time.strftime('%a, %d %b %Y, %H:%M:%S') %>) </div>
+<div> <%= message.limit %> (<%= message.time.strftime('%a, %d %b %Y, %H:%M:%S') %>) </div>
 <br>
 <%end%>
  </body>
 </center>
 <html>
-
-
-
-

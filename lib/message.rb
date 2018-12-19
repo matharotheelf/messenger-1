@@ -7,4 +7,7 @@ def initialize(content)
 @time = Time.now
 end
 
+def limit
+  @content[0..19]
+end
 end
