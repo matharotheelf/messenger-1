@@ -15,6 +15,9 @@
   </form>
        <br>
 <% @messages.reverse.each do | message | %>
+<form action="/messages/<%=message.id%>">
+  <input type="hidden" name="id" value= <%=message.id%> />
+</form>
 <div> <a href="/messages/<%=message.id%>"><%= message.limit %></a> (<%= message.time.strftime('%a, %d %b %Y, %H:%M:%S') %>) </div>
 <br>
 <%end%>

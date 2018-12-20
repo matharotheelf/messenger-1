@@ -17,16 +17,14 @@ class Messenger < Sinatra::Base
 
   post '/board' do
       message = Message.new(params[:message], session[:id])
-      p message.id
       session[:messages] << message
       session[:id] += 1
       redirect '/'
   end
 
   get '/messages/:id' do
-    messages = session[:messages]
-    id = session[:id]
-    @message = messages[id - 1]
+    @messages = session[:messages]
+    @id = params[:id]
     erb(:one_id)
   end
 end
