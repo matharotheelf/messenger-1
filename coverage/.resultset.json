@@ -1,6 +1,19 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/admin/Projects/messenger-1/spec/features/delete_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/admin/Projects/messenger-1/spec/features/display_spec.rb": [
         1,
         1,
@@ -152,6 +165,6 @@
         null
       ]
     },
-    "timestamp": 1546718784
+    "timestamp": 1546719957
   }
 }
