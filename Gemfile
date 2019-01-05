@@ -5,6 +5,8 @@ ruby '2.5.0'
 gem 'rake'
 gem 'selenium-webdriver'
 gem 'sinatra'
+gem 'dm-postgres-adapter'
+gem 'data_mapper'
 
 group :test do
   gem 'capybara'

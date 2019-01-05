@@ -10,10 +10,10 @@ end
 feature 'User can press on button to see full message' do
   scenario "User can press button to open page with full message" do
     visit('/')
-    fill_in 'message', with: 'jack sparrow davey jones orlando bloom pirates'
+    fill_in 'message', with: 'jack sparrow davey 1jones orlando bloom pirates'
     click_button 'Submit'
     #fill_in 'message', with: 'I am jack sparrow You are Davey Jones'
-    click_link 'jack sparrow davey j'
-    expect(page).to have_content 'jack sparrow davey jones orlando bloom pirates'
+    click_link 'jack sparrow davey 1'
+    expect(page).to have_content 'jack sparrow davey 1jones orlando bloom pirates'
   end
 end

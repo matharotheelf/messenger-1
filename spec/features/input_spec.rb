@@ -4,5 +4,5 @@ feature 'User can type a message' do
 		fill_in 'message', with: "Tess tickle"
 		click_button 'Submit'
 		expect(page).to have_content "Tess tickle"
-	end 
-end 
+	end
+end

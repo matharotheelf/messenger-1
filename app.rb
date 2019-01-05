@@ -1,30 +1,34 @@
 require 'sinatra/base'
 require_relative './lib/message.rb'
+require './config/data_mapper'
 
 class Messenger < Sinatra::Base
 
   enable :sessions
 
+  ENV['RACK_ENV'] ||= 'development'
+
   before do
-   session[:id] ||= 1
+    session[:id] ||= 1
   end
 
   get '/' do
-    session[:messages] ||= []
-    @messages = session[:messages]
+    # session[:messages] ||= []
+    # @messages = session[:messages]
+    @messages = Message.all
     erb(:index)
   end
 
   post '/board' do
-      message = Message.new(params[:message], session[:id])
-      session[:messages] << message
-      session[:id] += 1
-      redirect '/'
+    Message.create(content: params[:message])
+    # session[:messages] << message
+    # session[:id] += 1
+    redirect '/'
   end
 
   get '/messages/:id' do
-    @messages = session[:messages]
-    @id = params[:id]
+    @message = Message.get(params[:id])
+
     erb(:one_id)
   end
 end

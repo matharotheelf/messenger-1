@@ -7,7 +7,7 @@ describe History do
   let (:message2) { double(:message2) }
   let (:message3) { double(:message3) }
 
-  context 'Storing messages' do 
+  context 'Storing messages' do
     it ' stores a message' do
       expect(history.store(message)).to eq([message])
     end
@@ -17,15 +17,15 @@ describe History do
       history.store(message2)
       history.store(message3)
       expect(history.show_log).to eq([message, message2, message3])
-    end  
-  end 
+    end
+  end
 
-  context 'Returning messages' do 
+  context 'Returning messages' do
 
     it 'returns stored message' do
-        history.store(message)
-        expect(history.show_log).to eq([message])
+      history.store(message)
+      expect(history.show_log).to eq([message])
     end
-  end 
+  end
 
-end 
+end
