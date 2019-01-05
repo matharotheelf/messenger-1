@@ -1,1 +1,9 @@
 <h1> <%= @message.content %> </h1>
+
+<form action="/editor" method = "post">
+
+<input type='submit' value='Edit' name= "Submit">
+
+<input type="hidden" name="id" value="<%= @id %>">
+
+</form>

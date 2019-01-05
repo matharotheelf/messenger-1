@@ -22,6 +22,22 @@
         null,
         null
       ],
+      "/Users/admin/Projects/messenger-1/spec/features/edit_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/admin/Projects/messenger-1/spec/features/infrastructure_spec.rb": [
         1,
         1,
@@ -136,6 +152,6 @@
         null
       ]
     },
-    "timestamp": 1545394839
+    "timestamp": 1546718784
   }
 }

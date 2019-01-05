@@ -28,8 +28,19 @@ class Messenger < Sinatra::Base
 
   get '/messages/:id' do
     @message = Message.get(params[:id])
-
+    @id = params[:id]
     erb(:one_id)
+  end
+
+  post '/editor' do
+    @id = params[:id]
+    erb(:editor)
+  end
+
+  post '/edit' do
+    @message = Message.get(params[:id])
+    @message.update(:content => params[:text])
+    redirect '/'
   end
 end
 
