@@ -7,6 +7,7 @@ gem 'selenium-webdriver'
 gem 'sinatra'
 gem 'dm-postgres-adapter'
 gem 'data_mapper'
+gem 'rake'
 
 group :test do
   gem 'capybara'
