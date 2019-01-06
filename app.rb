@@ -20,7 +20,7 @@ class Messenger < Sinatra::Base
   end
 
   post '/board' do
-    Message.create(content: params[:message])
+    Message.create(content: params[:message], tag: params[:tag])
     # session[:messages] << message
     # session[:id] += 1
     redirect '/'
@@ -30,6 +30,11 @@ class Messenger < Sinatra::Base
     @message = Message.get(params[:id])
     @id = params[:id]
     erb(:one_id)
+  end
+
+  get '/taglist/:tag' do
+    @messages = Message.all(:tag => params[:tag])
+    erb(:taglist)
   end
 
   post '/editor' do

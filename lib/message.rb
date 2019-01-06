@@ -6,6 +6,7 @@ class Message
   property :id, Serial
   property :content, String
   property :created_at, DateTime
+  property :tag, String
 
 
 # attr_reader :content, :time, :id

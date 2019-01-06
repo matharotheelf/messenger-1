@@ -8,14 +8,23 @@
   <h1> Welcome to the Messenger App </h1>
   <form action="/board" method='post'>
      <br>
+     Message
     <input type='text' name='message'>
+     <br>
+     Tag
+    <input type='text' name='tag'>
      <br>
      <input type='submit' value='Submit'>
      <br>
   </form>
+
+  <h3> Message - Time - Tag </h3>
        <br>
 <% @messages.reverse.each do | message | %>
-<div> <a href="/messages/<%=message.id%>"><%= message.limit %></a> (<%= message.created_at.strftime('%a, %d %b %Y, %H:%M:%S') %>) </div>
+<div> <a href="/messages/<%=message.id%>"><%= message.limit %></a>
+  <%= message.created_at.strftime('%a, %d %b %Y, %H:%M:%S') %>
+  <a href="/taglist/<%=message.tag%>"><%= message.tag %></a>
+</div>
 <br>
 <%end%>
  </body>

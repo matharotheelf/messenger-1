@@ -92,6 +92,26 @@
         null,
         null
       ],
+      "/Users/admin/Projects/messenger-1/spec/features/tag_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/admin/Projects/messenger-1/spec/history_spec.rb": [
         1,
         null,
@@ -165,6 +185,6 @@
         null
       ]
     },
-    "timestamp": 1546719957
+    "timestamp": 1546733208
   }
 }
